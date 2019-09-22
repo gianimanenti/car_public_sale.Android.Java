@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2B886E</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="backgroundLight">#E8E8E8</color>
+    <color name="backgroundSuperLight">#F2F3F4</color>
+    <color name="backgroundButton">#2B886E</color>
+    <color name="colorBorder">#424242</color>
+    <color name="light_gray">#d1d1d1</color>
+    <color name="strokeLight">#4b4c4d</color>
+    <color name="stroke">#141A1F</color>
+    <color name="solidFiled">#a0ffffff</color>
+
+    <color name="colorTransparent">#00ffffff</color>
+    <color name="colorWarning">#ff00</color>
+    <color name="textColorDefault">#141A1F</color>
+    <color name="textColorDark">#4D4D4D</color>
+    <color name="textColorPrimary">#E8E8E8</color>
+    <color name="textColorSecondary">#8f8f8f</color>
+
+    <array name="car_colors">
+        <item>#FFFFFF</item>
+        <item>#c0c0c0</item>
+        <item>#000000</item>
+        <item>#808080</item>
+        <item>#F39C12</item>
+        <item>#5DADE2</item>
+        <item>#58D68D</item>
+        <item>#F2D7D5</item>
+        <item>#7D3C98</item>
+        <item>#186A3B</item>
+        <item>#ff00</item>
+    </array>
+</resources>

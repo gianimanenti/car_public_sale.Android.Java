@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.checkin.DriverID">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/form_padding_default"
+            android:paddingBottom="@dimen/form_padding_default">
+
+            <LinearLayout
+                android:id="@+id/Car"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/cOs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="OOS-0187"
+                    android:paddingBottom="@dimen/form_padding_default"
+                    android:textAlignment="center"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/cTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:background="@color/colorPrimary"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="Veículo"
+                    android:textColor="@color/backgroundSuperLight"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cPlaca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/cEndereco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/cTipo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/cModelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/cColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Driver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:background="@color/colorPrimary"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="Condutor"
+                    android:textColor="@color/backgroundSuperLight"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dNome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dRg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/dCpf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/dCnh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/dAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/dEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/dTelefone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/CarEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/eTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:background="@color/colorPrimary"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="Ocorrência"
+                    android:textColor="@color/backgroundSuperLight"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/eTipoOcorrencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:text="Tipo de ocorrência"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/eDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:text="Tipo de ocorrência"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/llImages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/CarInspection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/inspectionTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:background="@color/colorPrimary"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="Detalhes de Vistoria"
+                    android:textColor="@color/backgroundSuperLight"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/vInfo1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/vInfo2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/vInfo3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/vInfo4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/vInfo5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/CarDamage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/damageTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:background="@color/colorPrimary"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="Danos e Avarias do Veículo"
+                    android:textColor="@color/backgroundSuperLight"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cdAvarias"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/cdInfo1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/cdInfo2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/cdInfo3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/cdInfo4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/cdInfo5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/cdInfo6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Accessories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/acTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:background="@color/colorPrimary"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="Acessórios e Equipamentos"
+                    android:textColor="@color/backgroundSuperLight"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ipInfo1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ipInfo2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ipInfo3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ipInfo4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ipInfo5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ipInfo6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ipInfo7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ipInfo8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ipInfo9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ipInfo10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ipInfo11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ipInfo12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ipInfo13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ipInfo14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ipInfo15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ipInfo16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ipInfo17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ipInfo18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ipInfo19"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ipInfo20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ipInfo21"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ipInfo22"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ipInfo23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ipInfo24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ipInfo25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ipInfo26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ipInfo27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="20dp"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <View
+                    android:id="@+id/divider2"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/backgroundButton"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="20dp"/>
+
+                <TextView
+                    android:id="@+id/dSign"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="Assinatura do Proprietário"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/dSignImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"/>
+
+                <TextView
+                    android:id="@+id/gSign"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="Assinatura do Operador do Guincho"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/gSignImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" />
+
+                <TextView
+                    android:id="@+id/oSign"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="Assinatura do Oficial"
+                    android:textColor="@color/textColorDefault"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/oSignImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" />
+
+                <View
+                    android:id="@+id/divider3"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@color/backgroundButton"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp" />
+
+                <RelativeLayout
+                    android:paddingTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <Button
+                        android:id="@+id/btnPrint"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/rounded_corner_button"
+                        android:text="Imprimir"
+                        android:textColor="@android:color/background_light"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnTracking"
+                        android:layout_width="19dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="127dp"
+                        android:layout_marginLeft="247dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_toStartOf="@+id/btnFinish"
+                        android:layout_toEndOf="@+id/btnPrint"
+                        android:background="@drawable/rounded_corner_button"
+                        android:text="Iniciar Transporte"
+                        android:textColor="@android:color/background_light"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/btnFinish"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/rounded_corner_button"
+                        android:text="Finalizar"
+                        android:textColor="@android:color/background_light"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

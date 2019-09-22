@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.checkin.CarEvent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/form_padding_default"
+            android:paddingBottom="@dimen/form_padding_default">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:text="Para lama Traseiro"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/rbAcessorio1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/input_label_vertical_spacing"
+                android:paddingRight="@dimen/input_label_vertical_spacing"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbAcessorio1_S"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sim"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rbAcessorio1_N"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Não"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rbAcessorio1_I"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Inexistente/Avariado"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/form_padding_default"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                style="@style/ViewLine"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:text="Escapamento"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/rbAcessorio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/input_label_vertical_spacing"
+                android:paddingRight="@dimen/input_label_vertical_spacing"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbAcessorio2_S"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sim"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rbAcessorio2_N"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Não"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rbAcessorio2_I"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Inexistente/Avariado"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/form_padding_default"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                style="@style/ViewLine"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:text="Placa"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/rbAcessorio3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/input_label_vertical_spacing"
+                android:paddingRight="@dimen/input_label_vertical_spacing"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbAcessorio3_S"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sim"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rbAcessorio3_N"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Não"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rbAcessorio3_I"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Inexistente/Avariado"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/form_padding_default"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                style="@style/ViewLine"/>
+
+            <EditText
+                android:id="@+id/ipOutros"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="Outros" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

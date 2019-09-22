@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.checkin.CarEvent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/form_padding_default"
+            android:paddingBottom="@dimen/form_padding_default">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:layout_marginBottom="14dp"
+                android:hint="Informe as partes do veículo onde há avaria"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                app:srcCompat="@drawable/vistoria" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="14dp"
+                    android:hint="Lista de avarias do veículo"
+                    android:textColor="@android:color/black"
+                    android:layout_centerVertical="true"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/addAvaria"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.1"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/ic_add_circle_24dp"
+                    android:paddingRight="@dimen/input_label_vertical_spacing" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/rbAvariaNotFound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:hint="Não há avarias"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/input_label_vertical_spacing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rbAvaria"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_rv" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/form_padding_default"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                style="@style/ViewLine"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:hint="Pneu DD"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/rbPneu1_Estado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="@dimen/input_label_vertical_spacing"
+                    android:paddingRight="@dimen/input_label_vertical_spacing"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbPneu1_Estado_B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbPneu1_Estado_M"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="M"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbPneu1_Estado_R"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="R"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rbPneu1_Tipo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="@dimen/input_label_vertical_spacing"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbPneu1_Tipo_C"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbPneu1_Tipo_L"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="L"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbPneu1_Tipo_I"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="I"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/ipPneu1_Marca"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="Marca" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:hint="Pneu TD"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/rbPneu2_Estado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="@dimen/input_label_vertical_spacing"
+                    android:paddingRight="@dimen/input_label_vertical_spacing"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbPneu2_Estado_B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbPneu2_Estado_M"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="M"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbPneu2_Estado_R"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="R"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rbPneu2_Tipo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="@dimen/input_label_vertical_spacing"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbPneu2_Tipo_C"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbPneu2_Tipo_L"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="L"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbPneu2_Tipo_I"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="I"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/ipPneu2_Marca"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="Marca" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:hint="Pneu DE"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/rbPneu3_Estado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="@dimen/input_label_vertical_spacing"
+                    android:paddingRight="@dimen/input_label_vertical_spacing"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbPneu3_Estado_B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbPneu3_Estado_M"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="M"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbPneu3_Estado_R"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="R"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rbPneu3_Tipo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="@dimen/input_label_vertical_spacing"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbPneu3_Tipo_C"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbPneu3_Tipo_L"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="L"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbPneu3_Tipo_I"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="I"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/ipPneu3_Marca"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="Marca" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:hint="Pneu TE"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/rbPneu4_Estado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="@dimen/input_label_vertical_spacing"
+                    android:paddingRight="@dimen/input_label_vertical_spacing"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbPneu4_Estado_B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbPneu4_Estado_M"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="M"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbPneu4_Estado_R"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="R"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rbPneu4_Tipo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="@dimen/input_label_vertical_spacing"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbPneu4_Tipo_C"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbPneu4_Tipo_L"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="L"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbPneu4_Tipo_I"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="I"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/ipPneu4_Marca"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="Marca" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:hint="Estepe"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/rbEstepe_Estado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="@dimen/input_label_vertical_spacing"
+                    android:paddingRight="@dimen/input_label_vertical_spacing"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbEstepe_Estado_B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="B"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbEstepe_Estado_M"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="M"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbEstepe_Estado_R"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="R"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rbEstepe_Tipo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="@dimen/input_label_vertical_spacing"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbEstepe_Tipo_C"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="C"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbEstepe_Tipo_L"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="L"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbEstepe_Tipo_I"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="I"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/ipEstepe_Marca"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="Marca" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:hint="Combustível"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/rbCombustivel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/input_label_vertical_spacing"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbCombustivel_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tanque Cheio"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rbCombustivel_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3/4"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rbCombustivel_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1/2"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rbCombustivel_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1/4"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.checkin.DriverID">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/form_padding_default"
+            android:paddingBottom="@dimen/form_padding_default">
+
+            <EditText
+                android:id="@+id/ipNomeCondutor"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="Nome" />
+
+            <EditText
+                android:id="@+id/ipRG"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="RG"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/ipCPF"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="CPF"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/ipCNH"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="CNH" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:layout_marginBottom="24dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/ipEndereco"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_weight="0.9"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:ems="10"
+                    android:hint="Endereço" />
+
+                <ImageView
+                    android:id="@+id/ivEndereco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/login_default_padding"
+                    android:layout_weight="0.1"
+                    android:textSize="12sp"
+                    app:srcCompat="@drawable/ic_location_on_black_24dp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/ipEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="E-mail" />
+
+            <EditText
+                android:id="@+id/ipTelefone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="Telefone"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

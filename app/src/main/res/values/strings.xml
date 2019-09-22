@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Remoção de Veículos</string>
+    <string name="agreement">Assinatura do Proprietário</string>
+    <string name="clear_pad">Corrigir</string>
+    <string name="save_signature">Confirmar</string>
+
+    <!-- Strings related to login -->
+    <string name="no_internet">Sem conexão com a internet</string>
+    <string name="message_required_login_email">Você deve inserir um e-mail válido</string>
+    <string name="message_required_login_password">Você deve inserir uma senha válida</string>
+    <string name="failed_login">Usuário ou senha inválida</string>
+    <string name="failed_login_invalid_account">Conta inválida</string>
+
+    <!-- Strings related to Menu Home -->
+    <string name="menu_service_orders">Check In de Veículos</string>
+    <string name="menu_checkout">Check Out de Veículos</string>
+    <string name="menu_identification">Identificação</string>
+    <string name="menu_driver">Condutor</string>
+    <string name="menu_event">Ocorrência</string>
+    <string name="menu_survey">Vistoria</string>
+    <string name="menu_acessory_1">Acessórios 1/5</string>
+    <string name="menu_acessory_2">Acessórios 2/5</string>
+    <string name="menu_acessory_3">Acessórios 3/5</string>
+    <string name="menu_acessory_4">Acessórios 4/5</string>
+    <string name="menu_acessory_5">Acessórios 5/5</string>
+    <string name="menu_summary">Resumo</string>
+    <string name="menu_signature_driver">Assinatura do Proprietário</string>
+    <string name="menu_signature_operator">Assinatura do Operador</string>
+    <string name="menu_signature_official">Assinatura do Oficial</string>
+    <string name="menu_about">Sobre nós</string>
+    <string name="menu_exit">Sair</string>
+    <string name="navigation_drawer_open">Abrir</string>
+    <string name="navigation_drawer_close">Fechar</string>
+    <string name="spinner_select">[. . .]</string>
+
+    <string name="request_not_found">Não existem orderns de serviço registradas.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="220dp" />
+
+    <ListView
+        android:id="@+id/videoListView"
+        android:layout_width="match_parent"
+        android:layout_height="410dp" />
+
+    <Button
+        android:id="@+id/videoRecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GRAVAR" />
+
+    <Button
+        android:id="@+id/videoStop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Parar Video" />
+
+</LinearLayout>

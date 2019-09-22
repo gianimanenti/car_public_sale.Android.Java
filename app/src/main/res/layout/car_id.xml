@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.checkin.CarID">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/form_padding_default"
+                android:paddingBottom="@dimen/form_padding_default">
+
+                <RadioGroup
+                    android:id="@+id/rbTipoIdent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbTipoIdent_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Placa"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbTipoIdent_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Chassi"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbTipoIdent_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Outro"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/ipIdentification"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="Identificação do Veículo" />
+
+            <EditText
+                android:id="@+id/ipEndereco"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="Localização" />
+
+            <EditText
+                android:id="@+id/ipTipoVeiculo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="Tipo de Veículo" />
+
+            <EditText
+                android:id="@+id/ipModelo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="Modelo" />
+
+            <EditText
+                android:id="@+id/ipCor"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:ems="10"
+                android:hint="Cor" />
+
+            <TextView
+                android:id="@+id/tvCondutor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:layout_marginBottom="14dp"
+                android:text="Possui Condutor"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default">
+
+                <RadioGroup
+                    android:id="@+id/rbPossuiCond"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbPossuiCond_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sim"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <RadioButton
+                        android:id="@+id/rbPossuiCond_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Não"
+                        android:buttonTint="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.checkin.CarEvent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/form_padding_default"
+            android:paddingBottom="@dimen/form_padding_default">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:layout_marginBottom="14dp"
+                android:hint="Veículo Removido para a Base do Prestador?"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:id="@+id/rbRemBasePrestador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbRemBasePrestador_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sim"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rbRemBasePrestador_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Não"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rbRemBasePrestador_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N/A"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/form_padding_default"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                style="@style/ViewLine"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:layout_marginBottom="14dp"
+                android:text="Vistoria realizada em local escuro?"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:id="@+id/rbLocalEscuro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbLocalEscuro_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sim"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rbLocalEscuro_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Não"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rbLocalEscuro_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N/A"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/form_padding_default"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                style="@style/ViewLine"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:layout_marginBottom="14dp"
+                android:text="Cliente acompanhou o transporte?"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:id="@+id/rbAcompanhouTransp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbAcompanhouTransp_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sim"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rbAcompanhouTransp_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Não"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rbAcompanhouTransp_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N/A"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/form_padding_default"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                style="@style/ViewLine"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:layout_marginBottom="14dp"
+                android:text="Reboquista teve acesso ao interior do veículo?"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:id="@+id/rbReboquistaVeic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbReboquistaVeic_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sim"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rbReboquistaVeic_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Não"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rbReboquistaVeic_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N/A"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/form_padding_default"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                style="@style/ViewLine"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:layout_marginBottom="14dp"
+                android:text="Cliente retirou pertences pessoais?"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                android:id="@+id/rbPertencesPessoais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rbPertencesPessoais_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sim"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rbPertencesPessoais_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Não"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/rbPertencesPessoais_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="N/A"
+                    android:buttonTint="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/form_padding_default"
+                android:layout_marginLeft="@dimen/form_padding_default"
+                android:layout_marginRight="@dimen/form_padding_default"
+                style="@style/ViewLine"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

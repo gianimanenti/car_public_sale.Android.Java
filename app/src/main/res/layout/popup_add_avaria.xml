@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:paddingRight="0dp"
+    android:background="@color/backgroundLight"
+    android:paddingLeft="0dp">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:paddingRight="@dimen/form_padding_default"
+        android:paddingLeft="@dimen/form_padding_default"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Adicionar Avaria"
+            android:textColor="@color/backgroundLight"
+            android:textSize="24sp"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/ipDescricao"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="@dimen/form_padding_default"
+        android:layout_marginRight="@dimen/form_padding_default"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:ems="10"
+        android:inputType="text|textMultiLine"
+        android:gravity="top"
+        android:hint="Informe, detalhadamente, a avaria encontrada no veículo."/>
+
+    <Button
+        android:id="@+id/btnAddAvaria"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:background="@color/backgroundButton"
+        android:textColor="@color/textColorPrimary"
+        android:text="Aplicar"
+        android:textStyle="bold"/>
+
+</LinearLayout>
